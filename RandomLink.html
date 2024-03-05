@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Link Generator</title>
+</head>
+<body>
+    <h1>Random Link Generator</h1>
+    <p>Klicke auf den Button, um einen zufälligen Link zu öffnen:</p>
+    <button onclick="openRandomLink()">Zufälligen Link öffnen</button>
+    
+    <script>
+        function openRandomLink() {
+            // Array mit Links
+            var links = [
+                'https://www.example.com/link1',
+                'https://www.example.com/link2',
+                'https://www.example.com/link3',
+                // Weitere Links hier hinzufügen...
+            ];
+            
+            // Zufälligen Index auswählen
+            var randomIndex = Math.floor(Math.random() * links.length);
+            
+            // Zufälligen Link öffnen
+            window.open(links[randomIndex], '_blank');
+        }
+    </script>
+</body>
+</html>
